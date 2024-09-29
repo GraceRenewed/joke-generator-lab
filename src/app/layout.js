@@ -1,14 +1,18 @@
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
 import PropTypes from 'prop-types';
+import NavBar from '../components/NavBar';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+// const inter = Inter({ subsets: ['latin'] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <NavBar />
+        <div className="container">{children}</div>
+      </body>
     </html>
   );
 }
