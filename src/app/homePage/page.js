@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import NavBar from '../components/NavBar';
 
 function Home() {
   return (
@@ -14,7 +13,6 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <NavBar />
       Welcome to Joke Generator!
     </div>
   );

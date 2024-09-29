@@ -1,4 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
@@ -15,7 +18,7 @@ export default function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             {/* CLOSE NAVBAR ON LINK SELECTION: https://stackoverflow.com/questions/72813635/collapse-on-select-react-bootstrap-navbar-with-nextjs-not-working */}
-            <Link className="nav-link" href="/" passHref>
+            <Link className="nav-link" href="/homePage" passHref>
               Home
             </Link>
             <Button variant="danger" onClick={signOut}>
